@@ -1,5 +1,7 @@
 let totalSlides = document.querySelectorAll('.slider--item').length
 let currentSlide = 0
+let video = document.querySelector('#videoBox')
+let tudo = document.querySelector('.tudo')
 
 document.querySelector('.slider--width').style.width = `calc(100vw * ${totalSlides})`
 
@@ -25,3 +27,8 @@ function updateMargin(){
 setInterval(goNext,10000)
 
 goNext()
+
+function clickVideo(){
+    video.style.display = 'block'
+    tudo.style.backgroundColor = 'rgba(0, 0, 0, 0.267)'
+}

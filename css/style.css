@@ -10,9 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-body{
-    background-color: #a2d9ff;
-}
+
 header{
     display: flex;
     flex-direction: column;
@@ -26,6 +24,7 @@ header{
 .header ul{
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 .header ul li a{
     margin: 20px;
@@ -73,9 +72,8 @@ header{
     text-transform: uppercase;
 }
 .about-us{
-    height: 90vh;
+    height: 100%;
     padding-top: 40px;
-   
    
     
 }
@@ -85,58 +83,49 @@ header{
     font-size: 40px;
     
 }
-.sun{
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
-    position: absolute;
-    left: -150px;
-    background-color: rgb(252, 194, 3);
-    z-index: 95;
-    
-}
-.sun::before{
-    content: '';
-    width: 110%;
-    position: absolute;
-    height: 110%;
-    border-radius: 140px;
-    
-    overflow: hidden;
-    background-color: rgb(252, 244, 3);
-    animation: sunAnimation 5s alternate infinite ;
-    z-index: 1;
-    box-shadow: 5px 5px 10px rgb(252, 244, 3);
-    
-}
-.sun::after{
-    content: '';
-    position: absolute;
-    background-color: rgb(252, 194, 3);
-    inset: 5px;
-    z-index: 2;
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
-    
-}
+
+
 .container{
     width: 90vw;
     margin: auto;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 .about-us--left{
     width: 400px;
     height: 500px;
     margin-top: 30px;
-    box-shadow: 5px 5px 10px #000;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
     background-image: url(../images/barco2.jpg);
     background-position: center;
     background-size: cover;
-    z-index: 99;
+    z-index: 9;
     border-radius: 5px;
+    cursor: pointer;
+    
 }
+.about-us--left img{
+    width: 50%;
+    height: 50%;
+    
+}
+.videoBox{
+    display: none;
+    width: 100%;
+    margin-left: 150px;
+    transition: 5s;
+    border-radius: 15px;
+}
+.video{
+    
+    margin: auto;
+    
+    
+    width: 90%;
+    
+}
+
 
 .about-us--right{
     z-index: 2;
@@ -144,13 +133,16 @@ header{
     max-width: 600px;
     line-height: 30px;
 }
-
-#nuvem{
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    margin-left: 380px;
-    z-index: 0;
+.x-btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    position: relative;
+    top: 0;
+    z-index: 5;
 }
 
 
