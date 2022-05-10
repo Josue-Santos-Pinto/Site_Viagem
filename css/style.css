@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif, 'Lobster',cursive,'Pacifico', cursive;
+    font-family: 'Roboto',sans-serif;
     
 }
 .flex{
@@ -39,9 +39,12 @@ header{
     color: #999;
     font-style: italic;
 }
-.slider{
-    flex: 1;
-    background-color: blue;
+.banner{
+    height: calc(100vh - 50px);
+    background-color: #333;
+    background-image: url(../images/cidade1.jpg);
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 .slider--width{
@@ -54,8 +57,10 @@ header{
     height: inherit;
     background-position: center;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.514);
+    
 }
-.slider--texto{
+.slider--area{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +72,7 @@ header{
     color: rgb(255, 255, 255);
     line-height: 70px;
 }
-.slider--texto h1{
+.slider--area h1{
     font-family: 'Pacifico' ;
     text-transform: uppercase;
 }
