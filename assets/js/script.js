@@ -1,9 +1,9 @@
-let totalSlides = document.querySelectorAll('.slider--item').length
+let totalSlides = document.querySelectorAll('.slide').length
 let currentSlide = 0
 let video = document.querySelector('#videoBox')
-let tudo = document.querySelector('.tudo')
 
-document.querySelector('.slider--width').style.width = `calc(100vw * ${totalSlides})`
+
+document.querySelector('.sliders').style.width = `calc(100vw * ${totalSlides})`
 
 
 
@@ -20,9 +20,9 @@ function goNext(){
 
 
 function updateMargin(){
-    let sliderItemWidth = document.querySelector('.slider--item').clientWidth
+    let sliderItemWidth = document.querySelector('.slide').clientWidth
     let newMargin = (currentSlide * sliderItemWidth)
-    document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`
+    document.querySelector('.slide').style.marginLeft = `-${newMargin}px`
 }
 setInterval(goNext,10000)
 
