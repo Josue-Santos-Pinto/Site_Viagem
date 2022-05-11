@@ -128,6 +128,9 @@ header {
 }
 
 
+
+
+
 .default{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -148,6 +151,22 @@ header {
 .default .section-body{
     max-width: 1140px;
     margin: auto;
+}
+.default.dark{
+    background-color: #2155CD;
+}
+.default.dark .section-title,
+.default.dark .section-desc,
+.default.dark .section-body{
+    color: #E8F9FD;
+}
+.default .light{
+    background-color: #E8F9FD;
+}
+.default.light .section-title,
+.default.light .section-desc,
+.default.light .section-body{
+    color: #000;
 }
 
 
@@ -188,3 +207,21 @@ header {
     border-radius: 100px;
 }
 
+
+
+
+
+.section-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section-service{
+    width: 33%;
+    height: 100px;
+    text-align: center;
+}
+.section-service img{
+    width: 100px;
+    height: 100px;
+}
