@@ -8,10 +8,16 @@ body {
     font-size:13px;
     overflow-x:hidden;
 }
+.body{
+    z-index: 99;
+}
 .flex{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+div.button{
+    cursor: pointer;
 }
 
 header {
@@ -51,7 +57,7 @@ header {
     display:flex;
 }
 .menu li a {
-    color:#0AA1DD;
+    color:#999;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
@@ -64,8 +70,8 @@ header {
 }
 .menu li a:hover,
 .menu .active a {
-    border-bottom:5px solid #0AA1DD;
-    color:#2155CD;
+    border-bottom:5px solid #19556d;
+    color:#000;
 }
 
 .button {
@@ -90,7 +96,7 @@ header {
 .banner {
     height:calc(100vh - 100px);
     background-color:#333;
-    background-image:url('../images/cidade4.jpg');
+    background-image:url('../images/maldivas.jpg');
     background-size:cover;
     background-position:center;
     overflow:hidden;
@@ -102,6 +108,7 @@ header {
 .banner .slide {
     width:100vw;
     height:100%;
+    
     display:inline-block;
     background-color:rgba(0, 0, 0, 0.5);
 }
@@ -113,6 +120,13 @@ header {
     align-items:center;
     color:#E8F9FD;
 }
+.slidetext{
+    flex-direction: column;
+    width: 100vw;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
 .banner h1 {
     text-transform: uppercase;
     font-weight: bold;
@@ -175,9 +189,34 @@ header {
 
 .section-about-us{
     display: flex;
+    height: 400px;
+}
+.section-about-us .video{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    background-color: #000;
+    left: 23%;
+    transition: 3s; 
+    display: none;
+    border-radius: 15px;
+}
+.close{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -20px;
+    left: 95%;
+    border-radius: 30px;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
 }
 .section-about-us--left{
     flex: 1;
+    flex-direction: column;
 }
 .section-about-us--left p{
     line-height: 30px;
@@ -218,10 +257,122 @@ header {
 }
 .section-service{
     width: 33%;
-    height: 100px;
+    height: 100%;
     text-align: center;
+    border-right: 1px solid #fff;
 }
 .section-service img{
     width: 100px;
     height: 100px;
+}
+.section-service h2{
+    margin-top: 30px;
+}
+.section-service:nth-child(1){
+    border-left: 1px solid #fff;
+}
+
+
+
+
+
+
+.section-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.section-plan--list{
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #E8F9FD;
+    color: black;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+.section-plan--list ul,
+.section-plan--list li{
+    list-style: none;
+}
+.section-plan--list li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #555;
+    border-right: 1px solid #999;
+    border-bottom: 2px solid #E8F9FD;
+    cursor: pointer;
+}
+.section-plan--list li:last-child{
+    border-right: none;
+}
+.section-plan--list li:hover,
+.section-plan--list li.active{
+    border-bottom: 3px solid black;
+}
+
+.section-plan--photos{
+    width: 100vw;
+    height: auto;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.section-plan--photo{
+    width: 350px;
+}
+.section-plan--photoarea{
+    margin: 10px;
+    width: 300px;
+    height: 180px;
+}
+.section-plan--photoarea img{
+    width: inherit;
+    height: inherit;
+}
+.section-plan--photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 30px;
+}
+.section-plan--photoinfo h5 {
+    font-size:18px;
+    font-weight:600;
+}
+.section-plan--photoinfo p{
+    text-align: center;
+    margin-top: 5px;
+}
+.section-plan--photoinfo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+.section-plan--photoinfo a:hover{
+    font-weight: 600;
+}
+
+.section-plan--photoarea:hover .section-plan--photoinfo{
+    display: flex;
+}
+
+.more{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
 }

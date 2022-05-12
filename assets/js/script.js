@@ -1,6 +1,12 @@
 let totalSlides = document.querySelectorAll('.slide').length
 let currentSlide = 0
-let video = document.querySelector('#videoBox')
+let video = document.querySelector('.video')
+let img = document.querySelector('.img')
+let close = document.querySelector('.close')
+let moreBtn = document.querySelector('#morePlans')
+let lessBtn = document.querySelector('#lessPlans')
+let moreClass = document.querySelector('.more')
+
 
 
 document.querySelector('.sliders').style.width = `calc(100vw * ${totalSlides})`
@@ -28,7 +34,33 @@ setInterval(goNext,10000)
 
 goNext()
 
-function clickVideo(){
-    video.style.display = 'block'
-    tudo.style.backgroundColor = 'rgba(0, 0, 0, 0.267)'
-}
+ img.addEventListener("click",()=>{
+     video.style.display = 'block'
+     //body.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'
+     
+ })
+
+function closeVideo(){
+    if(video.style.display = 'block'){
+        video.style.display = 'none'
+    } 
+    
+ }
+
+ moreBtn.addEventListener("click",()=>{
+     moreClass.style.display = 'flex'
+     moreClass.style.opacity = '1'
+     moreBtn.style.display = 'none'
+ })
+
+ lessBtn.addEventListener("click",()=>{
+    moreBtn.style.display = 'inline-block'
+    moreClass.style.display = 'none'
+    moreClass.style.opacity = '0.2'
+    lessBtn = ''
+    lessBtn.style.display = 'none'
+    
+    
+})
+
+ 

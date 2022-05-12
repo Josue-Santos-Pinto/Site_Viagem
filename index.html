@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
     <title>Viagem Plus</title>
 </head>
-<body>
+<body class="body">
     <header>
         <div class="header">
             <div class="logo">
@@ -37,21 +37,27 @@
             <div class="sliders" style="margin-left:0;">
                 <div class="slide">
                     <div class="slidearea">
-                        <h1>Travel to<br/><span>Where you want</span></h1>
-                        <h2>Call Us: +00 0 1234 5678</h2>
-                        <a href="" class="button">Get in touch!</a>
+                        <div class="slidetext flex">
+                            <h1>Travel to<br/><span>Where you want</span></h1>
+                            <h2>Call Us: +00 0 1234 5678</h2>
+                            <a href="" class="button">Get in touch!</a>
+                        </div>
                     </div>
                 </div><div class="slide">
                     <div class="slidearea">
+                        <div class="slidetext flex">
                         <h1>Meet <br/><span>New Places</span></h1>
                         <h2>Call Us: +00 0 1234 5678</h2>
                         <a href="" class="button">Get in touch!</a>
+                        </div>
                     </div>
                 </div><div class="slide">
                     <div class="slidearea">
-                        <h1>traveling is necessary<br/><span> for everyone</span></h1>
+                        <div class="slidetext flex">
+                        <h1>Enjoy <br><span> your life</span></h1>
                         <h2>Call Us: +00 0 1234 5678</h2>
                         <a href="" class="button">Get in touch!</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,8 +69,12 @@
         <div class="section-body">
 
             <div class="section-about-us">
-
-                <div class="section-about-us--left">
+                <div class="video">
+                    <div onclick="closeVideo()" class="close flex"> X </div>
+                    <video src=""></video>
+                </div>
+                
+                <div class="section-about-us--left flex">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum veniam, dolorem ad, beatae dolorum est expedita dicta blanditiis, eum id quas ut ex consequatur quo officia labore magnam error.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quod nulla ipsum mollitia tenetur. Quisquam quae reprehenderit sint officia sapiente dolorum culpa, laudantium veniam, eius provident inventore quas perferendis fugit? 
@@ -73,7 +83,7 @@
                     <a href="" class="button">Learn More</a>
                 </div>
 
-                <div class="section-about-us--right">
+                <div class="section-about-us--right flex">
                     
                     <div class="img flex">
                         <div class="play"></div>
@@ -92,22 +102,244 @@
             <div class="section-services">
                 <div class="section-service">
                     <img src="assets/images/brasil.png" alt="">
-                    <h2>Viagens nacionais</h2>
+                    <h2>National Travellings</h2>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/aviao.png" alt="">
-                    <h2>Viagens internacionais</h2>
+                    <h2>International Travellings</h2>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/intercambio.png" alt="">
-                    <h2>Intercambios</h2>
+                    <h2>Bootcamps</h2>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <section class="default light">
+        <div class="section-title">Plans</div>
+        <div class="section-desc">Where you can go</div>
+        <div class="section-body">
+
+            <div class="section-plan">
+                <div class="section-plan--list">
+                    <ul>
+                        <li class="active">All</li>
+                        <li>National</li>
+                        <li>International</li>
+                        <li>Bootcamps</li>
+                    </ul>
                 </div>
             </div>
-            
-           
-        </div>
+            <div class="section-plan--photos">
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/toronto.jpg">
+                    </div>
+                </div>
 
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/paris.jpg">
+                    </div>
+                </div>
+
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/hawaii.jpg">
+                    </div>
+                </div>
+
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/maldivas.jpg">
+                    </div>
+                </div>
+
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/alasca.jpg">
+                    </div>
+                </div>
+
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/paisagem1.jpg">
+                    </div>
+                </div>
+
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/paisagem3.jpg">
+                    </div>
+                </div>
+
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/toronto.jpg">
+                    </div>
+                </div>
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Hawaii</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">learn more</a>
+                        </div>
+                        <img src="assets/images/san francisco.jpg">
+                    </div>
+                </div>
+                <div class="button" id="morePlans">More Plans</div>
+
+                <div class="more">
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/toronto.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/paris.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/hawaii.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/maldivas.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/alasca.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/paisagem1.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/paisagem3.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/toronto.jpg">
+                        </div>
+                    </div>
+                    <div class="section-plan--photo">
+                        <div class="section-plan--photoarea">
+                            <div class="section-plan--photoinfo">
+                                <h5>Hawaii</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                                <a href="">learn more</a>
+                            </div>
+                            <img src="assets/images/san francisco.jpg">
+                        </div>
+                    </div>
+                    <div class="button" id="lessPlans">Show Less</div>
+                </div>
+            </div>
+                
+        </div>
     </section>
+
+
+
+
+
 
     <script src="assets/js/script.js"></script>
 </section>
