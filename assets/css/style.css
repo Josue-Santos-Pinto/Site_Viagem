@@ -187,9 +187,24 @@ header {
 
 
 
+
+
 .section-about-us{
     display: flex;
     height: 400px;
+}
+.videoarea{
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
 }
 .section-about-us .video{
     width: 700px;
@@ -201,11 +216,12 @@ header {
     display: none;
     border-radius: 15px;
 }
+
 .close{
     width: 60px;
     height: 60px;
-    position: absolute;
-    top: -20px;
+    position: relative;
+    top: -22px;
     left: 95%;
     border-radius: 30px;
     background-color: red;
@@ -369,10 +385,20 @@ header {
 .section-plan--photoarea:hover .section-plan--photoinfo{
     display: flex;
 }
-
+.boxmore{
+    width: 1140px;
+    background-color: #ccc;
+    height: auto;
+}
 .more{
+    
     display: none;
     flex-wrap: wrap;
     justify-content: center;
-    opacity: 0;
+    height: 0px;
+    overflow-y: hidden;
+    background-color: red;
+    transition: all linear 2s;
 }
+
+

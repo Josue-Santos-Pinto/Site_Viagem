@@ -1,11 +1,14 @@
 let totalSlides = document.querySelectorAll('.slide').length
 let currentSlide = 0
+let videoarea = document.querySelector('.videoarea')
 let video = document.querySelector('.video')
 let img = document.querySelector('.img')
 let close = document.querySelector('.close')
 let moreBtn = document.querySelector('#morePlans')
 let lessBtn = document.querySelector('#lessPlans')
 let moreClass = document.querySelector('.more')
+let moreArea = document.querySelector('.boxmore')
+let photoinfo = document.querySelectorAll('.more.section-plan--photo')
 
 
 
@@ -36,27 +39,36 @@ goNext()
 
  img.addEventListener("click",()=>{
      video.style.display = 'block'
-     //body.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'
+     videoarea.style.display = 'flex'
      
  })
 
 function closeVideo(){
     if(video.style.display = 'block'){
         video.style.display = 'none'
+        videoarea.style.display = 'none'
     } 
     
  }
 
  moreBtn.addEventListener("click",()=>{
+    
+    let aumMore = setTimeout(openMore,500)
+
+     moreArea.style.height = `0px`
      moreClass.style.display = 'flex'
-     moreClass.style.opacity = '1'
      moreBtn.style.display = 'none'
+     
+     function openMore(){
+        moreClass.style.height = '665px'
+     }
+
+
  })
 
  lessBtn.addEventListener("click",()=>{
     moreBtn.style.display = 'inline-block'
     moreClass.style.display = 'none'
-    moreClass.style.opacity = '0.2'
     lessBtn = ''
     lessBtn.style.display = 'none'
     
