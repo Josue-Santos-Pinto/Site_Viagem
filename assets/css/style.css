@@ -3,11 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family:'Montserrat', Arial, Helvetica, sans-serif;
     font-size:13px;
     overflow-x:hidden;
 }
+
 .body{
     z-index: 99;
 }
@@ -18,11 +22,13 @@ body {
 }
 div.button{
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 header {
     height:100px;
-    background-color: #79DAE8;
+    background: rgb(30,130,99);
+    background: linear-gradient(90deg, rgba(30,130,99,1) 0%, rgba(61,112,144,1) 50%, rgba(43,159,136,1) 100%);
     color:#E8F9FD;
 }
 .header {
@@ -38,8 +44,10 @@ header {
 .logoimg {
     width:80px;
     height:80px;
-    background-color:#E8F9FD;
     border-radius:40px;
+    background-image: url(../../media/logo.png);
+    background-position: center;
+    background-size: cover;
 }
 .menu-opener {
     display:none;
@@ -57,7 +65,7 @@ header {
     display:flex;
 }
 .menu li a {
-    color:#999;
+    color:#fff;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
@@ -66,7 +74,7 @@ header {
     height:100px;
     display:flex;
     align-items:center;
-    border-bottom:5px solid #E8F9FD;
+    border-bottom:5px solid black;
 }
 .menu li a:hover,
 .menu .active a {
@@ -208,16 +216,25 @@ header {
 }
 .section-about-us .video{
     width: 700px;
-    height: 500px;
+    height: 400px;
     position: absolute;
     background-color: #000;
     left: 23%;
     transition: 3s; 
     display: none;
     border-radius: 15px;
+    
 }
-
+.video video{
+    
+    
+    width: 90%;
+    height: 90%;
+    margin-left: -20px;
+    margin-top: 20px;
+}
 .close{
+    
     width: 60px;
     height: 60px;
     position: relative;
@@ -387,8 +404,9 @@ header {
 }
 .boxmore{
     width: 1140px;
-    background-color: #ccc;
+    
     height: auto;
+    
 }
 .more{
     
@@ -397,7 +415,6 @@ header {
     justify-content: center;
     height: 0px;
     overflow-y: hidden;
-    background-color: red;
     transition: all linear 2s;
 }
 

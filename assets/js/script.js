@@ -8,7 +8,8 @@ let moreBtn = document.querySelector('#morePlans')
 let lessBtn = document.querySelector('#lessPlans')
 let moreClass = document.querySelector('.more')
 let moreArea = document.querySelector('.boxmore')
-let photoinfo = document.querySelectorAll('.more.section-plan--photo')
+let hover = document.querySelector('.more.photosection-plan--photoinfo')
+let photoinfo = document.querySelectorAll('.more .section-plan--photo')
 
 
 
@@ -38,7 +39,7 @@ setInterval(goNext,10000)
 goNext()
 
  img.addEventListener("click",()=>{
-     video.style.display = 'block'
+     video.style.display = 'flex'
      videoarea.style.display = 'flex'
      
  })
@@ -58,6 +59,7 @@ function closeVideo(){
      moreArea.style.height = `0px`
      moreClass.style.display = 'flex'
      moreBtn.style.display = 'none'
+     lessBtn.style.display = 'inline-block'
      
      function openMore(){
         moreClass.style.height = '665px'
@@ -67,12 +69,19 @@ function closeVideo(){
  })
 
  lessBtn.addEventListener("click",()=>{
-    moreBtn.style.display = 'inline-block'
-    moreClass.style.display = 'none'
-    lessBtn = ''
     lessBtn.style.display = 'none'
     
+    let dimMore = setTimeout(closeMore,500)
+
+    moreBtn.style.display = 'inline-block'
     
+    
+   
+    
+    function closeMore(){
+        moreClass.style.height = '0px'
+        hover.style.display = 'none'
+     }
 })
 
  
