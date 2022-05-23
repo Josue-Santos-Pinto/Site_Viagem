@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Viagem Plus</title>
 </head>
 <body class="body">
@@ -23,9 +24,7 @@
                         <li><a href="#about-us">About us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#plans">Our Plans</a></li>
-                        <li><a href="">Happy Clients</a></li>
-                        <li><a href="">Price</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -62,7 +61,7 @@
             </div>
           
         </section>
-    <section class="default light" id="about-us">
+    <section class="default light" id="about-us"  data-aos = "fade-right">
         <div class="section-title">About Us</div>
         <div class="section-desc">Who we are</div>
         <div class="section-body">
@@ -96,7 +95,7 @@
         </div>
     </section>
     
-    <section class="default dark" id="services">
+    <section class="default dark" id="services" data-aos="fade-in" data-aos-duration="1000">
         <div class="section-title">Services</div>
         <div class="section-desc">Services that we provide</div>
         <div class="section-body">
@@ -117,7 +116,7 @@
         </div>
     </section>
 
-    <section class="default light" id="plans">
+    <section class="default light" id="plans" data-aos = "fade-left">
         <div class="section-title">Plans</div>
         <div class="section-desc">Where you can go</div>
         <div class="section-body">
@@ -342,7 +341,7 @@
         </div><!--section-body-->
     </section>
     
-    <section class="contact">
+    <section class="contact" id="contact-us">
         <div class="content">
             <h2>Contact-Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quas tempora deserunt numquam architecto, explicabo consequuntur iusto nesciunt dolorem fugit nihil ducimus ab libero itaque quia odio eaque quisquam quod?</p>
@@ -405,6 +404,10 @@
 
 
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </section>
 </body>
 </html>

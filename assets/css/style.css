@@ -624,6 +624,13 @@ input[type=button]:hover{
     padding: 10px;
     font-size: 18px;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #00bcd4;
+    border-radius: 10px;
+}
 
 @media (max-width: 991px){
     .contact{
