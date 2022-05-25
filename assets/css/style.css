@@ -213,6 +213,7 @@ header {
     justify-content: center;
     align-items: center;
     overflow-y:auto;
+    z-index: 98;
 }
 .section-about-us .video{
     width: 700px;
@@ -223,6 +224,7 @@ header {
     transition: 3s; 
     display: none;
     border-radius: 15px;
+    z-index: 99;
     
 }
 .video video{
@@ -347,6 +349,11 @@ header {
 .section-plan--list li:hover,
 .section-plan--list li.active{
     border-bottom: 3px solid black;
+}
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-plan--photos{
@@ -601,7 +608,7 @@ input[type=button]:hover{
     left: 0;
     padding: 5px 0;
     font-size: 16px;
-    margin: 10px 0;
+    margin-top: 5px;
     pointer-events: none;
     transition: 0.5s;
     color: #666;
@@ -611,8 +618,8 @@ input[type=button]:hover{
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span{
-    color: #e91e63;
-    font-size: 12px;
+    
+    font-size: 16px;
     transform: translateY(-20px);
 }
 .contactForm .inputBox input[type=submit]{
@@ -624,6 +631,14 @@ input[type=button]:hover{
     padding: 10px;
     font-size: 18px;
 }
+.error{
+    font-size: 11px;
+    background-color: rgba(255, 0, 0, 0.651);
+    margin-top: -9px;
+    border-radius: 7px;
+    color: white;
+    padding: 4px;
+}
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -632,7 +647,21 @@ input[type=button]:hover{
     border-radius: 10px;
 }
 
-@media (max-width: 991px){
+
+
+
+@media (min-width:450px) and (max-width:800px){
+    .section-aboutus{
+        flex-direction: column;
+    }
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-aboutus--right{
+        width: auto;
+    }
     .contact{
         padding: 50px;
     }
@@ -647,3 +676,4 @@ input[type=button]:hover{
         width: 100%;
     }
 }
+

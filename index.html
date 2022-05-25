@@ -61,7 +61,7 @@
             </div>
           
         </section>
-    <section class="default light" id="about-us"  data-aos = "fade-right">
+    <section class="default light" id="about-us"  data-aos = "fade-right" data-aos-once="true">
         <div class="section-title">About Us</div>
         <div class="section-desc">Who we are</div>
         <div class="section-body">
@@ -121,6 +121,7 @@
         <div class="section-desc">Where you can go</div>
         <div class="section-body">
 
+            <div class="section-projects">
             <div class="section-plan">
                 <div class="section-plan--list">
                     <ul>
@@ -131,7 +132,11 @@
                     </ul>
                 </div>
             </div>
+            
             <div class="section-plan--photos">
+                
+
+                
                 <div class="section-plan--photo">
                     <div class="section-plan--photoarea">
                         <div class="section-plan--photoinfo">
@@ -173,6 +178,17 @@
                             <a href="">See more</a>
                         </div>
                         <img src="assets/images/maldivas.jpg">
+                    </div>
+                </div>
+
+                <div class="section-plan--photo">
+                    <div class="section-plan--photoarea">
+                        <div class="section-plan--photoinfo">
+                            <h5>Disney</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
+                            <a href="">See more</a>
+                        </div>
+                        <img src="assets/images/disney.jpg">
                     </div>
                 </div>
 
@@ -229,112 +245,10 @@
                         <img src="assets/images/san francisco.jpg">
                     </div>
                 </div>
-                <div class="button" id="morePlans">More Plans</div>
-
-                <div class="boxmore">
-                    <div class="more">
-                       <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Cambridge</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/cambridge.jpg">
-                            </div>
-                        </div>
-        
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Beach Park</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/beachpark.jpg">
-                            </div>
-                        </div>
-        
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Disney World</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/disney.jpg">
-                            </div>
-                        </div>
-        
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Buenos Aires</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/buenosaires.jpg">
-                            </div>
-                        </div>
-        
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Gramado</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/gramado.jpg">
-                            </div>
-                        </div>
-        
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Hawaii</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/paisagem1.jpg">
-                            </div>
-                        </div>
-        
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Hawaii</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/paisagem3.jpg">
-                            </div>
-                        </div>
-        
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Hawaii</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/toronto.jpg">
-                            </div>
-                        </div>
-                        <div class="section-plan--photo">
-                            <div class="section-plan--photoarea">
-                                <div class="section-plan--photoinfo">
-                                    <h5>Hawaii</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis corrupti.</p>
-                                    <a href="">See more</a>
-                                </div>
-                                <img src="assets/images/san francisco.jpg">
-                            </div>
-                        </div>
-                        <div class="button" id="lessPlans">Show Less</div>
-                        </div>
-                    
+            </div>
+                        <div class="button" id="morePlans">More Plans</div>
                 </div>
-
+            </div>
              
             </div><!--section-plan--photos-->
                 
@@ -374,20 +288,20 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form>
+                <form method="POST" class="validator">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required>
+                        <input type="text" name="" data-rules ="required|min=5">
                         <span>Full name</span>
                     </div>
     
                     <div class="inputBox">
-                        <input type="text" name="" required>
+                        <input type="text" name="" data-rules ="required|email">
                         <span>Email</span>
                     </div>
     
                     <div class="inputBox">
-                        <textarea required></textarea>
+                        <textarea></textarea>
                         <span>Type your message...</span>
                     </div>
                     <div class="inputBox">
@@ -405,6 +319,7 @@
 
     <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a21b6c73ea.js" crossorigin="anonymous"></script>
     <script>
       AOS.init();
     </script>
