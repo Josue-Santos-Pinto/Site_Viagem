@@ -5,6 +5,9 @@ let video = document.querySelector('.video')
 let img = document.querySelector('.img')
 let close = document.querySelector('.close')
 let form = document.querySelector('.validator')
+let menu = document.querySelector('.menu-opener')
+let nav = document.querySelector('#menu-open')
+let closeMenu = document.querySelector('.closeMenu')
 
 let validator ={
     handleSubmit:(event)=>{
@@ -124,6 +127,7 @@ goNext()
  img.addEventListener("click",()=>{
      video.style.display = 'flex'
      videoarea.style.display = 'flex'
+     video.style.marginLeft = 0
      
  })
 
@@ -136,3 +140,14 @@ function closeVideo(){
  }
 
  form.addEventListener('submit',validator.handleSubmit)
+
+
+ menu.addEventListener('click',()=>{
+     nav.style.display = 'block'
+     menu.classList.remove('menu-opener')
+     menu.classList.add('closeMenu')  
+ })
+
+ closeMenu.addEventListener('click',()=>{
+    nav.style.display = 'none'
+ })
