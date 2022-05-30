@@ -144,8 +144,7 @@ function closeVideo(){
 
  menu.addEventListener('click',()=>{
      nav.style.display = 'block'
-     menu.classList.remove('menu-opener')
-     menu.classList.add('closeMenu')  
+     closeMenu.style.display = 'block' 
  })
 
  closeMenu.addEventListener('click',()=>{
